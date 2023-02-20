@@ -1,3 +1,68 @@
+sudo apt-get update
+curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
+sudo bash nodesource_setup.sh
+sudo apt install nodejs build-essential
+npm install webpack-cli@3.0.8 --legacy-peer-deps
+npm install ganache-cli
+npm install node-gyp@3.6.2
+npm install truffle@5.1.39
+npm install web3  solc@0.4.25 
+npm install create-react-app
+
+sudo snap install docker
+sudo apt install awscli
+
+
+./node_modules/.bin/create-react-app  hello
+
+
+
+
+
+
+
+push commands: 
+
+
+
+aws configure
+sudo docker push XXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/react-docker-two:latest
+sudo docker login -u AWS -p $(aws ecr get-login-password --region us-east-1 ) XXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com
+sudo docker tag react-docker-two:latest XXXXXXXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/react-docker-two:latest
+sudo docker push XXXXXXX.dkr.ecr.us-east-1.amazonaws.com/react-docker-two:latest
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
